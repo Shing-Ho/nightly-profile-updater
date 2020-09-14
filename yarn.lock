@@ -223,6 +223,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dotenv@npm:^8.2.0":
+  version: 8.2.0
+  resolution: "dotenv@npm:8.2.0"
+  checksum: 16cb89cbd7b98b053899b8aba8c5044c8fb61a2db8a81fe70360b75035fce5fed53bd7a34d772be717d0880c0321122a4c09423f518025e1b52d96791521b1a7
+  languageName: node
+  linkType: hard
+
 "end-of-stream@npm:^1.1.0":
   version: 1.4.4
   resolution: "end-of-stream@npm:1.4.4"
@@ -597,6 +604,7 @@ __metadata:
     "@octokit/graphql": ^4.5.1
     "@types/gm": ^1
     "@types/node": ^14.0.14
+    dotenv: ^8.2.0
     gm: ^1.23.1
     playwright: ^1.1.1
     ts-node: ^8.10.2

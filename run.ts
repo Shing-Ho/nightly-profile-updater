@@ -4,9 +4,11 @@ import { graphql } from "@octokit/graphql";
 import * as playwright from 'playwright'
 import { existsSync } from "fs";
 import { execSync } from "child_process";
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 (async () => {
-
   const response: any = await graphql(
     `
     query { 
@@ -68,11 +70,11 @@ import { execSync } from "child_process";
     console.log("made screenshots")
     await browser.close();
 
-  if (existsSync("dd2892cdc1b724f5434cf674fa83f3a8")) {
-    execSync("rm -rf dd2892cdc1b724f5434cf674fa83f3a8")
+  if (existsSync("eb7e4dde321255e9fe2d66a912d6130d")) {
+    execSync("rm -rf eb7e4dde321255e9fe2d66a912d6130d")
   }
-  execSync(`git clone https://orta:${process.env.GITHUB_API_TOKEN}@gist.github.com/dd2892cdc1b724f5434cf674fa83f3a8.git`)
-  execSync("rm dd2892cdc1b724f5434cf674fa83f3a8/*")
+  execSync(`git clone https://Shing-Ho:${process.env.GITHUB_API_TOKEN}@gist.github.com/eb7e4dde321255e9fe2d66a912d6130d.git`)
+  execSync("rm eb7e4dde321255e9fe2d66a912d6130d/*")
 
 
   const Gm = require("gm");
@@ -80,14 +82,16 @@ import { execSync } from "child_process";
   .in("images/*.png")
   .delay(400)
   .resize(378, 100)
-  .write("dd2892cdc1b724f5434cf674fa83f3a8/main.gif", async function(err){
+  .write("eb7e4dde321255e9fe2d66a912d6130d/main.gif", async function(err){
     if (err) throw err;
     console.log("animated.gif created");
 
 
-    execSync("git add .", { cwd: "dd2892cdc1b724f5434cf674fa83f3a8"  })
-    execSync("git commit -m 'update'", { cwd: "dd2892cdc1b724f5434cf674fa83f3a8"  })
-    execSync("git push", { cwd: "dd2892cdc1b724f5434cf674fa83f3a8"  })
+    execSync("git add .", { cwd: "eb7e4dde321255e9fe2d66a912d6130d"  })
+    console.log('before git commit')
+    execSync("git commit -m 'update'", { cwd: "eb7e4dde321255e9fe2d66a912d6130d"  })
+    console.log('before git push')
+    execSync("git push", { cwd: "eb7e4dde321255e9fe2d66a912d6130d"  })
     
     console.log("done")
   })

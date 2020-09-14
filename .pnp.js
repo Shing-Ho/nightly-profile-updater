@@ -42,6 +42,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:14.0.14"
       ],
       [
+        "dotenv",
+        "npm:8.2.0"
+      ],
+      [
         "gm",
         "npm:1.23.1"
       ],
@@ -68,6 +72,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@octokit/graphql", "npm:4.5.1"],
             ["@types/gm", "npm:1.18.8"],
             ["@types/node", "npm:14.0.14"],
+            ["dotenv", "npm:8.2.0"],
             ["gm", "npm:1.23.1"],
             ["playwright", "npm:1.1.1"],
             ["ts-node", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:8.10.2"],
@@ -324,6 +329,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/diff-npm-4.0.2-73133c7102-81b5cd7ddd.zip/node_modules/diff/",
           "packageDependencies": [
             ["diff", "npm:4.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["dotenv", [
+        ["npm:8.2.0", {
+          "packageLocation": "./.yarn/cache/dotenv-npm-8.2.0-6b21df4d37-16cb89cbd7.zip/node_modules/dotenv/",
+          "packageDependencies": [
+            ["dotenv", "npm:8.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -754,6 +768,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@octokit/graphql", "npm:4.5.1"],
             ["@types/gm", "npm:1.18.8"],
             ["@types/node", "npm:14.0.14"],
+            ["dotenv", "npm:8.2.0"],
             ["gm", "npm:1.23.1"],
             ["playwright", "npm:1.1.1"],
             ["ts-node", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:8.10.2"],

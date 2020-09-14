@@ -16,8 +16,8 @@ jobs:
       - uses: actions/setup-node@v1
       - run: sudo apt-get install graphicsmagick
       - run: |
-          git config --global user.email "git@orta.io"
-          git config --global user.name "Orta"
+          git config --global user.email "talentyeedev@gmail.com"
+          git config --global user.name "Shing Ho Tan"
 
       - run: yarn install
       - run: yarn ts-node run.ts
